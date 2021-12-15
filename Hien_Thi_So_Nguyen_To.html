@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhap So Vao Day!")
+    let isPrime = true;
+    if (number < 2) {
+        alert("Khong phai so nguyen to");
+    } else if (number ==2) {
+        alert("la so nguyen to")
+    }    else {
+            for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                isPrime = false;
+                alert("khong phai so nguyen to!")
+                break;
+            } else {
+                isPrime = true;
+                alert("la so nguyen to")
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>
